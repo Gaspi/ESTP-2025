@@ -42,7 +42,7 @@ A new service with this configuration can now be started with one click from the
 - [ ] Delete the service to release its resources
 
 
-## Using `git`
+## Access your code with `git`
 
 - [ ] Start a new `Jupyter-python` or `Vscode-python` service
 - [ ] Using a terminal, clone this project: https://github.com/Gaspi/ESTP-2025.git and display the `README.md` file
@@ -73,5 +73,62 @@ To go further:
 - [ ] Generate a new *Personal Access Token* on Github with 
 - [ ] Copy the token to the `Git Forge Personal Access Token` field in `My account` -> `Git`
 - [ ] Check that you are able to push modifications on a repository you own
+
+
+## Access your data with `mc`
+
+- [ ] Under `File explorer`, browse your personal S3 bucket, which is probably empty at this point
+- [ ] Start a terminal in an interactive service and use the `mc ls` command from the green banner command to browse the same bucket from within your service
+- [ ] Download the following data file on your service: https://minio.lab.sspcloud.fr/gferey/diffusion/titanic.parquet
+- [ ] Copy the downloaded `titanic.parquet` file to your personnal bucket
+- [ ] Check with both browsing techniques that the file is in fact loaded to the S3 object storage
+- [ ] Click on the file with the web browser to open the file explorer
+- [ ] Delete your local `titanic.parquet` file
+- [ ] Move your S3 file to a path prefixed with `/diffusion/`, it is now publicly accessible
+
+<details>
+  <summary>Some help</summary>
+
+```sh
+mc ls s3/<username>/
+wget https://minio.lab.sspcloud.fr/gferey/diffusion/titanic.parquet
+mc cp titanic.parquet s3/<username>/titanic.parquet
+mc cp s3/<username>/titanic.parquet s3/<username>/diffusion/titanic.parquet
+mc rm s3/<username>/titanic.parquet
+```
+</details>
+
+To go further:
+- [ ] Access your S3 object storage directly from a Python script.
+
+```python
+import os, s3fs
+fs = s3fs.S3FileSystem(client_kwargs={'endpoint_url': "https://"+os.environ["AWS_S3_ENDPOINT"]})
+print(fs.ls("<bucketname>/diffusion"))
+
+import pandas as pd
+df = pd.read_parquet("<bucketname>/diffusion/titanic.parquet", filesystem=fs)
+print(df)
+```
+
+
+## Environment variables
+
+- [ ] Show all your service's environment variables with `env`
+- [ ] Filter to see Git credentials: `env | grep GIT`
+- [ ] Filter to see S3 credentials: `env | grep AWS`
+- [ ] Filter to see `mc` host configuration: `env | grep MC`
+
+
+## Host a web service
+
+- [ ] Start a new `Jupyter-python` or `Vscode-python` service
+- [ ] On the configuration screen, under `Network access`, enable access to your service through the port `5000`
+- [ ] Launch the service, in the notice panel a fresh URL was generated for your exposed port
+- [ ] Clone this project: https://github.com/Gaspi/ESTP-2025.git
+- [ ] Render the slides using `quarto`: `quarto render slides/index.qmd`
+- [ ] Start a simple Python HTTP server to serve the generated files on the port `5000`: `python -m http.server -d slides/ -b 0.0.0.0 5000`
+- [ ] Leave the server running and access the slides through the URL from the notice panel
+
 
 
