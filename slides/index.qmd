@@ -1,0 +1,222 @@
+---
+title: "SSP Cloud"
+subtitle: "The European Open-Innovation Data Platform"
+author:
+  - "**Gaspard Ferey (Insee)**"
+date: 09/30/2025
+date-format: "DD/MM/YYYY"
+slide-number: true
+footer: |
+  "SSP Cloud : The European Open-Innovation Data Platform"
+# uncomment for French presentations:
+lang: en-EN
+# for blind readers:
+slide-tone: false
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+# uncomment to use the multiplex mode:
+#multiplex: true
+format:
+  # pick the light mode (onyxia-revealjs) or the dark mode (onyxia-dark-revealjs)
+  onyxia-revealjs:
+  #onyxia-dark-revealjs:
+    output-file: index.html
+    incremental: false
+controls: false
+from: markdown+emoji
+output-dir: _slides
+---
+
+
+## When Infrastructure stands in the way of Innovation
+
+- **Isolated data scientists**
+- **Closed** and **rigid** IT/Dev environments
+
+    👉 difficult to move to production
+
+![](img/isolated.png){height="300" fig-align="center"}
+
+
+::: {.notes}
+[ANECDOTE] selfeur qui fait Python et dev qui refait en java
+:::
+
+## Many innovation opportunities
+
+- **Efficient datascience** stack: databases, automation, dataviz
+- Generalization of state-of-the-art **open source tools**
+  - secure and **well-supported** by a community
+  - **interoperable**, rely on **standards**
+- Non-traditional **new (big) data sources**
+- In the world fast-evolving **AI/ML**
+- Promote collaboration between diverse actors
+- Build a community
+
+
+# How to achieve this?
+
+## Fundamental principles
+
+<!--- 
+![](img/platform-believes5.svg){height="600" fig-align="center"}
+--->
+
+![](img/platform-believes2.svg){height="600" fig-align="center"}
+
+## Open innovation 
+<br>
+Open Innovation acts as **a bridge** between internal teams and outside networks
+
+- **Share** knowledge and resources
+- Wider pool of **new ideas and technologies**
+- **Mitigates risks** associated with new product development
+- **Cost savings**
+- Higher-quality products that **better meet users needs**
+
+
+## Fostering best practices
+
+- Autonomy
+- Separation of code, data and execution environment 
+
+<br>
+
+![](img/best_practices.png){height="350" fig-align="center"}
+
+
+# Use cases
+
+## Use case: promote cooperation
+
+- A **common infrastructure** outside local IT
+- Access to **standardized** environments
+- Fit for work on **open data**
+
+![](img/mutualize.svg){height="350" fig-align="center"}
+
+
+::: {.notes}
+- enables cross-INS projects
+
+:::
+
+## Use case: a project show room
+
+- **Dissemination** of new ideas and experimental work
+- Allows **one-click test** of advanced technologies / tools
+<br>  
+
+![](img/lomas.png){height="375" fig-align="center"}
+
+
+::: {.notes}
+- Example: Lomas
+Promote open source
+:::
+
+## Use case: hands-on formations and tutorials
+  
+  <br>
+
+- **Reproducible** environments
+- No **configuration overhead**
+- Trainees **autonomy**
+
+<div style="position: absolute; bottom: 1em; right: 1em;">
+  <img src="img/student.png" style="height: 375px;" />
+</div>
+
+::: {.notes}
+[ANECDOTE] Sortie de SAS > formation R/python via la plateforme
+:::
+
+# SSP Cloud
+
+## Core components
+
+![](img/onyxia-components.svg){height="550" fig-align="center"}
+
+
+## An extensive catalog of services
+
+![](img/onyxia-catalog.svg){height="550" fig-align="center"}
+
+
+# Practice Session
+
+::: {.notes}
+Login
+Service catalogs
+  - IDE > Databases (mentionner Qdrant / Milvus) > Auto > Dataviz > IDE
+Lancement d'un Jupyter
+  Discuter le NOTES
+  Préciser que les services sont tués chaque jour
+Retour à la page de config
+  - Service -> plusieurs version Python à jour
+  - Resources: careful with request : garantie
+  - Init script: allows custom initial setup: clone projects, install dependencies, etc.
+  - S3 > pre-filled fields from user configuration > are injected as env variables in the service
+      Allows to use tools (mc) out of the box
+  - Port: open some ports to expose a service (API, interface) accessed with their own URL
+  > Your configuration is in the URL : you can save it or copy the URL to share it
+    This is how our tutorials are launched on the platform
+Open the service
+  - I have my execution environment, my credentials and configuration were injected
+  - I still need my code and my data to start working
+  - Montrer le repo github
+    > Code Repository to collaborate on code based projects base on the version control software git
+    > Its become a standard in the dev world > increasingly so in the stats
+  - git clone  (créer une repo de démo)
+  - Monter My Files > distributed object storage
+  - open parquet file with explorer > fichier de format compressé orienté column mais requires a viewer
+  - from the service : open main.ipynb (import s3fs; client.get_object(s3/gferey); client.write )
+    > if you are not familiar with s3 / git > have a look at the tutorials
+      This is the upfront price: you can't leverage the full possibilities of SSP Cloud without a little bit of work first: getting accustomed to git/s3/k8s
+Tutorial
+ - Doc of the SSP Cloud: a user manual
+   > Version control
+   > Data storage
+ - Tuto python datascience
+:::
+
+# Questions
+
+
+## Resources
+
+- **Onyxia**:
+  - [Project website](http://onyxia.sh/)
+  - [Slack channel](https://join.slack.com/t/3innovation/shared_invite/zt-1hnzukjcn-6biCSmVy4qvyDGwbNI~sWg)
+
+- [Pre-print article](https://hal.science/hal-04608636) on Onyxia
+
+- Open instance: [SSP Cloud](https://datalab.sspcloud.fr/)
+  - Try it!
+
+## It's up to you now!
+
+🚀 Try out **SSP Cloud**  *Do it today!*
+
+💬 Join us on **Slack**
+
+🛠️ Consider deploying a **local instance** <br>  *We are available for support!*
+
+🤝 **get involved** with the project:
+
+- star our project on Github ⭐️
+- **community call**, dev/deployer/user channels
+- report bugs and new feature ideas
+- create new tutorials
+- contribute to codebase
+
+
+<!--
+## Discussion
+- The **price of autonomy**
+  - **Entry costs** of cloud technologies for organizations
+  - Statisticians must adopt **new development practices**
+- **Organizational challenges**
+  - **Compartmentalization** of skills
+  - Transitioning towards an **open-source governance**
+-->
