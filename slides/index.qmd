@@ -35,12 +35,25 @@ output-dir: _slides
 
     👉 difficult to move to production
 
-![](img/isolated.png){height="300" fig-align="center"}
-
-
-::: {.notes}
-[ANECDOTE] selfeur qui fait Python et dev qui refait en java
+:::: {.columns}
+::: {.column width="50%"}
+![](img/stat_vs_it.png){height="300" fig-align="center"}
 :::
+::: {.column width="50%"}
+![](img/isolated.png){height="300" fig-align="center"}
+:::
+::::
+
+
+## When Infrastructure stands in the way of Innovation
+
+- **Isolated data scientists**
+- **Closed** and **rigid** IT/Dev environments
+
+    👉 difficult to move to production
+
+![](img/stat_vs_it.png){height="300" fig-align="right"}
+
 
 ## Many innovation opportunities
 
@@ -58,10 +71,6 @@ output-dir: _slides
 
 ## Fundamental principles
 
-<!--- 
-![](img/platform-believes5.svg){height="600" fig-align="center"}
---->
-
 ![](img/platform-believes2.svg){height="600" fig-align="center"}
 
 ## Open innovation 
@@ -78,9 +87,8 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 ## Fostering best practices
 
 - Autonomy
+- Reproducibility
 - Separation of code, data and execution environment 
-
-<br>
 
 ![](img/best_practices.png){height="350" fig-align="center"}
 
@@ -96,11 +104,6 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 ![](img/mutualize.svg){height="350" fig-align="center"}
 
 
-::: {.notes}
-- enables cross-INS projects
-
-:::
-
 ## Use case: a project show room
 
 - **Dissemination** of new ideas and experimental work
@@ -110,10 +113,6 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 ![](img/lomas.png){height="375" fig-align="center"}
 
 
-::: {.notes}
-- Example: Lomas
-Promote open source
-:::
 
 ## Use case: hands-on formations and tutorials
   
@@ -127,9 +126,6 @@ Promote open source
   <img src="img/student.png" style="height: 375px;" />
 </div>
 
-::: {.notes}
-[ANECDOTE] Sortie de SAS > formation R/python via la plateforme
-:::
 
 # SSP Cloud
 
@@ -145,45 +141,19 @@ Promote open source
 
 # Practice Session
 
-::: {.notes}
-Login
-Service catalogs
-  - IDE > Databases (mentionner Qdrant / Milvus) > Auto > Dataviz > IDE
-Lancement d'un Jupyter
-  Discuter le NOTES
-  Préciser que les services sont tués chaque jour
-Retour à la page de config
-  - Service -> plusieurs version Python à jour
-  - Resources: careful with request : garantie
-  - Init script: allows custom initial setup: clone projects, install dependencies, etc.
-  - S3 > pre-filled fields from user configuration > are injected as env variables in the service
-      Allows to use tools (mc) out of the box
-  - Port: open some ports to expose a service (API, interface) accessed with their own URL
-  > Your configuration is in the URL : you can save it or copy the URL to share it
-    This is how our tutorials are launched on the platform
-Open the service
-  - I have my execution environment, my credentials and configuration were injected
-  - I still need my code and my data to start working
-  - Montrer le repo github
-    > Code Repository to collaborate on code based projects base on the version control software git
-    > Its become a standard in the dev world > increasingly so in the stats
-  - git clone  (créer une repo de démo)
-  - Monter My Files > distributed object storage
-  - open parquet file with explorer > fichier de format compressé orienté column mais requires a viewer
-  - from the service : open main.ipynb (import s3fs; client.get_object(s3/gferey); client.write )
-    > if you are not familiar with s3 / git > have a look at the tutorials
-      This is the upfront price: you can't leverage the full possibilities of SSP Cloud without a little bit of work first: getting accustomed to git/s3/k8s
-Tutorial
- - Doc of the SSP Cloud: a user manual
-   > Version control
-   > Data storage
- - Tuto python datascience
-:::
+<br>
+
+<div style="font-size: 2em;">
+  <a href="https://github.com/Gaspi/ESTP-2025/" target="_blank">github.com/Gaspi/ESTP-2025</a>
+</div>
+
 
 # Questions
 
 
-## Resources
+# Appendix
+
+## Links
 
 - **Onyxia**:
   - [Project website](http://onyxia.sh/)
@@ -196,7 +166,7 @@ Tutorial
 
 ## It's up to you now!
 
-🚀 Try out **SSP Cloud**  *Do it today!*
+🚀 Try out **SSP Cloud**
 
 💬 Join us on **Slack**
 
@@ -210,13 +180,3 @@ Tutorial
 - create new tutorials
 - contribute to codebase
 
-
-<!--
-## Discussion
-- The **price of autonomy**
-  - **Entry costs** of cloud technologies for organizations
-  - Statisticians must adopt **new development practices**
-- **Organizational challenges**
-  - **Compartmentalization** of skills
-  - Transitioning towards an **open-source governance**
--->

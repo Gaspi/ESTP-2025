@@ -151,24 +151,33 @@
 <li><p><strong>Closed</strong> and <strong>rigid</strong> IT/Dev environments</p>
 <p>👉 difficult to move to production</p></li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/stat_vs_it.png" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/isolated.png" class="quarto-figure quarto-figure-center" height="300"></p>
 </figure>
 </div>
-<aside class="notes">
-<p>[ANECDOTE] selfeur qui fait Python et dev qui refait en java</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</div></div>
+</section>
+<section id="when-infrastructure-stands-in-the-way-of-innovation-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>When Infrastructure stands in the way of Innovation</h2>
+<ul>
+<li><p><strong>Isolated data scientists</strong></p></li>
+<li><p><strong>Closed</strong> and <strong>rigid</strong> IT/Dev environments</p>
+<p>👉 difficult to move to production</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="img/stat_vs_it.png" class="quarto-figure quarto-figure-right" height="300"></p>
+</figure>
+</div>
 </section>
 <section id="many-innovation-opportunities" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Many innovation opportunities</h2>
@@ -192,9 +201,6 @@
 </section>
 <section id="fundamental-principles" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Fundamental principles</h2>
-<!--- 
-![](img/platform-believes5.svg){height="600" fig-align="center"}
---->
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/platform-believes2.svg" class="quarto-figure quarto-figure-center" height="600"></p>
@@ -216,9 +222,9 @@
 <h2>Fostering best practices</h2>
 <ul>
 <li>Autonomy</li>
+<li>Reproducibility</li>
 <li>Separation of code, data and execution environment</li>
 </ul>
-<p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/best_practices.png" class="quarto-figure quarto-figure-center" height="350"></p>
@@ -242,21 +248,6 @@
 <p><img data-src="img/mutualize.svg" class="quarto-figure quarto-figure-center" height="350"></p>
 </figure>
 </div>
-<aside class="notes">
-<ul>
-<li>enables cross-INS projects</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="use-case-a-project-show-room" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Use case: a project show room</h2>
@@ -269,21 +260,6 @@
 <p><img data-src="img/lomas.png" class="quarto-figure quarto-figure-center" height="375"></p>
 </figure>
 </div>
-<aside class="notes">
-<ul>
-<li>Example: Lomas Promote open source</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="use-case-hands-on-formations-and-tutorials" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Use case: hands-on formations and tutorials</h2>
@@ -296,19 +272,6 @@
 <div style="position: absolute; bottom: 1em; right: 1em;">
 <p><img src="img/student.png" style="height: 375px;"></p>
 </div>
-<aside class="notes">
-<p>[ANECDOTE] Sortie de SAS &gt; formation R/python via la plateforme</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section></section>
 <section>
 <section id="ssp-cloud" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -333,29 +296,24 @@
 </section></section>
 <section id="practice-session" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Practice Session</h1>
-<aside class="notes">
-<p>Login Service catalogs - IDE &gt; Databases (mentionner Qdrant / Milvus) &gt; Auto &gt; Dataviz &gt; IDE Lancement d’un Jupyter Discuter le NOTES Préciser que les services sont tués chaque jour Retour à la page de config - Service -&gt; plusieurs version Python à jour - Resources: careful with request : garantie - Init script: allows custom initial setup: clone projects, install dependencies, etc. - S3 &gt; pre-filled fields from user configuration &gt; are injected as env variables in the service Allows to use tools (mc) out of the box - Port: open some ports to expose a service (API, interface) accessed with their own URL &gt; Your configuration is in the URL : you can save it or copy the URL to share it This is how our tutorials are launched on the platform Open the service - I have my execution environment, my credentials and configuration were injected - I still need my code and my data to start working - Montrer le repo github &gt; Code Repository to collaborate on code based projects base on the version control software git &gt; Its become a standard in the dev world &gt; increasingly so in the stats - git clone (créer une repo de démo) - Monter My Files &gt; distributed object storage - open parquet file with explorer &gt; fichier de format compressé orienté column mais requires a viewer - from the service : open main.ipynb (import s3fs; client.get_object(s3/gferey); client.write ) &gt; if you are not familiar with s3 / git &gt; have a look at the tutorials This is the upfront price: you can’t leverage the full possibilities of SSP Cloud without a little bit of work first: getting accustomed to git/s3/k8s Tutorial - Doc of the SSP Cloud: a user manual &gt; Version control &gt; Data storage - Tuto python datascience</p>
-<p>Back to the final slide</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<p><br></p>
+<div style="font-size: 2em;">
+<p><a href="https://github.com/Gaspi/ESTP-2025/" target="_blank">github.com/Gaspi/ESTP-2025</a></p>
+</div>
 </section>
 
-<section>
 <section id="questions" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Questions</h1>
 
 </section>
-<section id="resources" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Resources</h2>
+
+<section>
+<section id="appendix" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Appendix</h1>
+
+</section>
+<section id="links" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Links</h2>
 <ul>
 <li><p><strong>Onyxia</strong>:</p>
 <ul>
@@ -371,7 +329,7 @@
 </section>
 <section id="its-up-to-you-now" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>It’s up to you now!</h2>
-<p>🚀 Try out <strong>SSP Cloud</strong> <em>Do it today!</em></p>
+<p>🚀 Try out <strong>SSP Cloud</strong></p>
 <p>💬 Join us on <strong>Slack</strong></p>
 <p>🛠️ Consider deploying a <strong>local instance</strong> <br> <em>We are available for support!</em></p>
 <p>🤝 <strong>get involved</strong> with the project:</p>
@@ -382,15 +340,6 @@
 <li>create new tutorials</li>
 <li>contribute to codebase</li>
 </ul>
-<!--
-## Discussion
-- The **price of autonomy**
-  - **Entry costs** of cloud technologies for organizations
-  - Statisticians must adopt **new development practices**
-- **Organizational challenges**
-  - **Compartmentalization** of skills
-  - Transitioning towards an **open-source governance**
--->
 
 </section></section>
     </div>
