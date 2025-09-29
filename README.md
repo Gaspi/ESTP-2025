@@ -64,7 +64,7 @@ cat README.md
 
 ```sh
 python hello.py
-pip install opendp lomas-client
+uv pip install --system lomas_client opendp smartnoise_synth_logger
 python work.py
 ```
 </details>
@@ -99,7 +99,10 @@ mc rm s3/<username>/titanic.parquet
 </details>
 
 To go further:
-- [ ] Access your S3 object storage directly from a Python script.
+- [ ] Access your S3 object storage directly from a Python script
+
+<details>
+  <summary>Some help</summary>
 
 ```python
 import os, s3fs
@@ -110,6 +113,7 @@ import pandas as pd
 df = pd.read_parquet("<bucketname>/diffusion/titanic.parquet", filesystem=fs)
 print(df)
 ```
+</details>
 
 
 ## Environment variables
@@ -118,6 +122,7 @@ print(df)
 - [ ] Filter to see Git credentials: `env | grep GIT`
 - [ ] Filter to see S3 credentials: `env | grep AWS`
 - [ ] Filter to see `mc` host configuration: `env | grep MC`
+- [ ] Setup custom environment variables in a service's configuration
 
 
 ## Host a web service
@@ -131,4 +136,21 @@ print(df)
 - [ ] Leave the server running and access the slides through the URL from the notice panel
 
 
+## If we have time
 
+- [ ] Use an initialization script to further configure your service
+  - clone work repository
+  - install packages
+  - download external resources
+  - automate some setup steps
+- [ ] Start a Lomas service
+- [ ] Add a dataset using data files and metadata files stored on S3
+  - Feel free to use our synthetic population data: https://datalab.sspcloud.fr/file-explorer/gferey/diffusion/synthetic-filo/974/population/
+- [ ] Connect to it with a Python client
+
+
+## Before you leave!
+
+- [ ] Push your code modifications
+- [ ] Save local data files to S3
+- [ ] Delete your services
