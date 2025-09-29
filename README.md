@@ -18,6 +18,7 @@
 - [ ] Under `File explorer`, you can browse publicly available datasets as well as your own personal *bucket*
 - [ ] Under `My account`, you can check and edit information used to preconfigure your services
 - [ ] Under `My account`, scroll right to the `Interface preference` to switch to dark mode
+- [ ] Have a quick look at our tutorials using the `Tutorial` button at the top
 
 
 ## Start a first work environment

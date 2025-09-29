@@ -33,7 +33,7 @@ output-dir: _slides
 - **Isolated data scientists**
 - **Closed** and **rigid** IT/Dev environments
 
-    👉 difficult to move to production
+    👉 difficult to move innovation to production
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -45,44 +45,31 @@ output-dir: _slides
 ::::
 
 
-## When Infrastructure stands in the way of Innovation
-
-- **Isolated data scientists**
-- **Closed** and **rigid** IT/Dev environments
-
-    👉 difficult to move to production
-
-![](img/stat_vs_it.png){height="300" fig-align="right"}
-
-
 ## Many innovation opportunities
 
-- **Efficient datascience** stack: databases, automation, dataviz
+- **Efficient datascience** stack: libraries, databases, automation, dataviz, open standards
 - Generalization of state-of-the-art **open source tools**
   - secure and **well-supported** by a community
   - **interoperable**, rely on **standards**
 - Non-traditional **new (big) data sources**
-- In the world fast-evolving **AI/ML**
-- Promote collaboration between diverse actors
+- Fast-evolving **AI/ML** technologies
+- Collaboration and knowledge sharing
 - Build a community
 
 
-# How to achieve this?
+# SSP Cloud
+
+## Core components
+
+![](img/onyxia-components.svg){height="550" fig-align="center"}
+
+## An extensive catalog of services
+
+![](img/onyxia-catalog.svg){height="550" fig-align="center"}
 
 ## Fundamental principles
 
 ![](img/platform-believes2.svg){height="600" fig-align="center"}
-
-## Open innovation 
-<br>
-Open Innovation acts as **a bridge** between internal teams and outside networks
-
-- **Share** knowledge and resources
-- Wider pool of **new ideas and technologies**
-- **Mitigates risks** associated with new product development
-- **Cost savings**
-- Higher-quality products that **better meet users needs**
-
 
 ## Fostering best practices
 
@@ -113,7 +100,6 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 ![](img/lomas.png){height="375" fig-align="center"}
 
 
-
 ## Use case: hands-on formations and tutorials
   
   <br>
@@ -127,16 +113,16 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 </div>
 
 
-# SSP Cloud
+## Open innovation 
+<br>
+Open Innovation acts as **a bridge** between internal teams and outside networks
 
-## Core components
+- **Share** knowledge and resources
+- Wider pool of **new ideas and technologies**
+- **Mitigates risks** associated with new product development
+- **Cost savings**
+- Higher-quality products that **better meet users needs**
 
-![](img/onyxia-components.svg){height="550" fig-align="center"}
-
-
-## An extensive catalog of services
-
-![](img/onyxia-catalog.svg){height="550" fig-align="center"}
 
 
 # Practice Session
@@ -155,14 +141,12 @@ Open Innovation acts as **a bridge** between internal teams and outside networks
 
 ## Links
 
+- The [SSP Cloud](https://datalab.sspcloud.fr/)
+- [Documentation](https://www.sspcloud.fr/catalog)
 - **Onyxia**:
   - [Project website](http://onyxia.sh/)
   - [Slack channel](https://join.slack.com/t/3innovation/shared_invite/zt-1hnzukjcn-6biCSmVy4qvyDGwbNI~sWg)
-
 - [Pre-print article](https://hal.science/hal-04608636) on Onyxia
-
-- Open instance: [SSP Cloud](https://datalab.sspcloud.fr/)
-  - Try it!
 
 ## It's up to you now!
 
