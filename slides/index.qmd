@@ -8,14 +8,10 @@ date-format: "DD/MM/YYYY"
 slide-number: true
 footer: |
   "SSP Cloud : The European Open-Innovation Data Platform"
-# uncomment for French presentations:
 lang: en-EN
-# for blind readers:
 slide-tone: false
 chalkboard: # press the B key to toggle chalkboard
   theme: whiteboard
-# uncomment to use the multiplex mode:
-#multiplex: true
 format:
   # pick the light mode (onyxia-revealjs) or the dark mode (onyxia-dark-revealjs)
   onyxia-revealjs:
@@ -67,10 +63,6 @@ output-dir: _slides
 
 ![](img/onyxia-catalog.svg){height="550" fig-align="center"}
 
-## Fundamental principles
-
-![](img/platform-believes2.svg){height="600" fig-align="center"}
-
 ## Fostering best practices
 
 - Autonomy
@@ -79,8 +71,23 @@ output-dir: _slides
 
 ![](img/best_practices.png){height="350" fig-align="center"}
 
+## Guiding principles
 
-# Use cases
+![](img/platform-believes2.svg){height="600" fig-align="center"}
+
+
+# Open innovation
+
+## Open innovation
+<br>
+Open Innovation acts as **a bridge** between internal teams and outside networks
+
+- **Share** knowledge and resources
+- Wider pool of **new ideas and technologies**
+- **Mitigates risks** associated with new product development
+- **Cost savings**
+- Higher-quality products that **better meet users needs**
+
 
 ## Use case: promote cooperation
 
@@ -112,16 +119,6 @@ output-dir: _slides
   <img src="img/student.png" style="height: 375px;" />
 </div>
 
-
-## Open innovation 
-<br>
-Open Innovation acts as **a bridge** between internal teams and outside networks
-
-- **Share** knowledge and resources
-- Wider pool of **new ideas and technologies**
-- **Mitigates risks** associated with new product development
-- **Cost savings**
-- Higher-quality products that **better meet users needs**
 
 
 
